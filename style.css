@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+	--orange: hsl(25, 97%, 53%);
+	--white: hsl(0, 0%, 100%);
+	--light-grey: hsl(217, 12%, 63%);
+	--medium-grey: hsl(216, 12%, 54%);
+	--dark-blue: hsl(213, 19%, 18%);
+	--very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: var(--white);
+	font-size: 15px;
+	font-family: 'Overpass', sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: var(--very-dark-blue);
+}
+
+.first_page {
+	display: flex;
+	flex-direction: column;
+	width: 320px;
+	padding: 30px;
+	background: radial-gradient(farthest-side at top center, hsl(215deg, 17%, 15%), hsl(215deg, 27%, 12%));
+	border-radius: 20px;
+}
+
+.image_star {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 37px;
+	height: 37px;
+	background-color: var(--dark-blue);
+}
+
+.image_star img {
+	width: 12px;
+	height: 12px;
+}
+
+.first_page h1 {
+	font-size: 1.4rem;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+.first_page p {
+	color: var(--medium-grey);
+	font-size: 0.75rem;
+	margin-bottom: 25px;
+	line-height: 18px;
+}
+
+.rating {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	margin-bottom: 25px;
+}
+
+.button_number {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--dark-blue);
+	color: var(--medium-grey);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 0.8rem;
+	border: none;
+}
+
+.button_number:hover {
+	background: var(--orange);
+	color: var(--white);
+	cursor: pointer;
+}
+
+.button_number:focus {
+	background: var(--light-grey);
+	color: var(--white);
+}
+
+.button_submit {
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center ;
+	background: var(--orange);
+	border-radius: 30px;
+	height: 35px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	border: none;
+}
+
+.button_submit:hover {
+	background: var(--white);
+	cursor: pointer;
+	color: var(--orange);
+	font-weight: 700;
+}
+
+.button_submit:disabled {
+	background: var(--light-grey);
+	cursor: default;
+	color: var(--white);
+	font-weight: 400;
+}
+
+.second_page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 320px;
+	padding: 30px;
+	height: 340px;
+	background: radial-gradient(farthest-side at top center, hsl(215deg, 17%, 15%), hsl(215deg, 27%, 12%));
+	border-radius: 20px;
+}
+
+.image_thanks {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+.image_thanks img {
+	width: 120px;
+}
+
+.rate_information {
+	background: var(--dark-blue);
+	color: var(--orange);
+	padding: 5px 15px;
+	border-radius: 20px;
+	margin-bottom: 25px;
+	font-size: 0.8rem;
+	font-weight: 400;
+	opacity: 0.8;
+}
+
+.second_page h1 {
+	font-size: 1.3rem;
+	margin-bottom: 10px;
+}
+
+.second_page p {
+	color: var(--medium-grey);
+	font-size: 0.75rem;
+	line-height: 18px;
+	text-align: center;
+}
