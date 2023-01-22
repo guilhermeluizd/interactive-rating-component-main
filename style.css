@@ -162,7 +162,7 @@ body {
 	margin-bottom: 10px;
 }
 
-.second_page p {
+.second_page_description {
 	color: var(--medium-grey);
 	font-size: 0.75rem;
 	line-height: 18px;
